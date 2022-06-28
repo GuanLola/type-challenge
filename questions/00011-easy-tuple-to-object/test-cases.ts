@@ -11,4 +11,5 @@ type cases = [
 ]
 
 // @ts-expect-error
+// 这个注释用来指示下一行代码预期应该包含错误，下一行代码的错误将不会被编译器报告。这在对类型进行预期失败的测试时很有用
 type error = TupleToObject<[[1, 2], {}]>
